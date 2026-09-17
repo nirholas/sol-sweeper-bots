@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+# Pre-commit hook: refuse a commit that would introduce a Solana private key.
+# It runs keyscan against the staged files only, so it judges exactly what is
+# about to be committed and nothing else in the tree.
+#
+# Install (from your repo root):
+#   ln -sf ../../hooks/pre-commit .git/hooks/pre-commit
+#   chmod +x .git/hooks/pre-commit
+# or copy it in if you prefer not to symlink.
+#
+# Bypass once, deliberately, if you are certain a match is a false positive:
+#   SKIP_KEYSCAN=1 git commit ...
+
+set -euo pipefail
+
+if [[ "${SKIP_KEYSCAN:-0}" == "1" ]]; then
+  echo "keyscan: skipped by SKIP_KEYSCAN=1"
+  exit 0
+fi
+
+# Resolve this hook's directory so the scanner is found whether the hook is a
+# symlink into hooks/ or a copy under .git/hooks.
+HOOK_SRC="${BASH_SOURCE[0]}"
+while [[ -L "$HOOK_SRC" ]]; do
+  DIR="$(cd -P "$(dirname "$HOOK_SRC")" && pwd)"
+  HOOK_SRC="$(readlink "$HOOK_SRC")"
+  [[ "$HOOK_SRC" != /* ]] && HOOK_SRC="$DIR/$HOOK_SRC"
+done
+HOOK_DIR="$(cd -P "$(dirname "$HOOK_SRC")" && pwd)"
+SCANNER="$HOOK_DIR/../tools/keyscan/scan.mjs"
+
+if [[ ! -f "$SCANNER" ]]; then
+  echo "keyscan: scanner not found at $SCANNER; skipping (fix your hook install)."
+  exit 0
+fi
+
+if node "$SCANNER" --staged; then
+  exit 0
+else
+  echo ""
+  echo "COMMIT BLOCKED: a staged file contains what looks like a Solana private key."
+  echo "A committed key is compromised forever. Remove it, rotate to a fresh key, and recommit."
+  echo "If this is genuinely a false positive: SKIP_KEYSCAN=1 git commit ..."
+  exit 1
+fi

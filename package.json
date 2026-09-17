@@ -1,0 +1,27 @@
+{
+  "name": "sol-sweeper-bots",
+  "version": "0.1.0",
+  "description": "Field guide to Solana sweeper bots plus read-only defensive tooling: a committed-key scanner and a burned-address checker.",
+  "type": "module",
+  "license": "MIT",
+  "author": "nirholas",
+  "bin": {
+    "keyscan": "tools/keyscan/scan.mjs",
+    "burned-check": "tools/burned-check/check.mjs"
+  },
+  "scripts": {
+    "scan": "node tools/keyscan/scan.mjs",
+    "burned-check": "node tools/burned-check/check.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "solana",
+    "security",
+    "private-key",
+    "secret-scanning",
+    "sweeper-bot",
+    "supply-chain"
+  ]
+}
