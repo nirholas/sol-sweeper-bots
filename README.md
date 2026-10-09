@@ -64,3 +64,7 @@ ever touches its address, in the same block, forever. The key still works. It
 just can never hold value again. The right response is to scan for these keys
 before they ship, disclose the ones you find, and never treat a wallet you do
 not control as yours.
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=nirholas/sol-sweeper-bots&type=Date)](https://www.star-history.com/#nirholas/sol-sweeper-bots&Date)
