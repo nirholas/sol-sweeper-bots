@@ -1,0 +1,24 @@
+# sol-sweeper-bots
+
+> Defensive explainer and read-only tools on why leaked Solana private keys are permanently unsafe and how sweeper bots exploit them.
+
+sol-sweeper-bots is an open-source repository by nirholas, part of the three.ws ecosystem.
+
+## Docs
+
+- [README](https://github.com/nirholas/sol-sweeper-bots/blob/HEAD/README.md): install, usage and reference
+- [Read](https://github.com/nirholas/sol-sweeper-bots/blob/HEAD/README.md#read)
+- [Tools (read-only, no keys, no network writes)](https://github.com/nirholas/sol-sweeper-bots/blob/HEAD/README.md#tools-read-only-no-keys-no-network-writes)
+- [Quick start](https://github.com/nirholas/sol-sweeper-bots/blob/HEAD/README.md#quick-start)
+- [The one-sentence version](https://github.com/nirholas/sol-sweeper-bots/blob/HEAD/README.md#the-one-sentence-version)
+- [AGENTS.md](https://github.com/nirholas/sol-sweeper-bots/blob/HEAD/AGENTS.md): guidance for coding agents
+- [Full text for LLMs](https://github.com/nirholas/sol-sweeper-bots/blob/HEAD/llms-full.txt): the README inlined
+
+## Project
+
+- [Source](https://github.com/nirholas/sol-sweeper-bots)
+- [Issues](https://github.com/nirholas/sol-sweeper-bots/issues)
+- [Discussions](https://github.com/nirholas/sol-sweeper-bots/discussions)
+- [Homepage](https://three.ws)
+- [three.ws](https://three.ws): the platform this is part of
+- [All repositories by nirholas](https://github.com/nirholas/nirholas#readme)

@@ -1,5 +1,10 @@
 # The Wallets That Can Never Hold Money
 
+<!-- three.ws:badges -->
+[![GitHub stars](https://img.shields.io/github/stars/nirholas/sol-sweeper-bots?style=flat&logo=github)](https://github.com/nirholas/sol-sweeper-bots/stargazers) [![License](https://img.shields.io/github/license/nirholas/sol-sweeper-bots?style=flat)](https://github.com/nirholas/sol-sweeper-bots/blob/HEAD/LICENSE) [![Last commit](https://img.shields.io/github/last-commit/nirholas/sol-sweeper-bots?style=flat)](https://github.com/nirholas/sol-sweeper-bots/commits) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat)](https://github.com/nirholas/sol-sweeper-bots/pulls) [![AI agent friendly](https://img.shields.io/badge/AI%20agents-AGENTS.md%20%2B%20llms.txt-6d5dfc?style=flat)](https://github.com/nirholas/sol-sweeper-bots/blob/HEAD/AGENTS.md)
+<!-- /three.ws:badges -->
+
+
 Why a private key that ever becomes public is permanently unsafe on Solana, how
 sweeper bots claim any funded compromised address in-block, and the read-only
 tools that catch the problem upstream.
@@ -68,3 +73,26 @@ not control as yours.
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=nirholas/sol-sweeper-bots&type=Date)](https://www.star-history.com/#nirholas/sol-sweeper-bots&Date)
+
+<!-- three.ws:growth -->
+## Support the project
+
+If sol-sweeper-bots saves you time, **[star it on GitHub](https://github.com/nirholas/sol-sweeper-bots)**. Stars are how other developers and AI agents find the repositories worth trusting, and they cost you one click.
+
+Know someone who would use it? [Post on X](https://twitter.com/intent/tweet?text=sol-sweeper-bots%3A%20Defensive%20explainer%20and%20read-only%20tools%20on%20why%20leaked%20Solana%20private%20keys%20are%20permanently%20unsafe&url=https%3A%2F%2Fgithub.com%2Fnirholas%2Fsol-sweeper-bots) · [Share on Bluesky](https://bsky.app/intent/compose?text=sol-sweeper-bots%3A%20Defensive%20explainer%20and%20read-only%20tools%20on%20why%20leaked%20Solana%20private%20keys%20are%20permanently%20unsafe%20https%3A%2F%2Fgithub.com%2Fnirholas%2Fsol-sweeper-bots) · [Share on LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fgithub.com%2Fnirholas%2Fsol-sweeper-bots) · [Submit to Hacker News](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fgithub.com%2Fnirholas%2Fsol-sweeper-bots&t=sol-sweeper-bots%3A%20Defensive%20explainer%20and%20read-only%20tools%20on%20why%20leaked%20Solana%20private%20keys%20are%20permanently%20unsafe) · [Share on Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Fgithub.com%2Fnirholas%2Fsol-sweeper-bots&title=sol-sweeper-bots%3A%20Defensive%20explainer%20and%20read-only%20tools%20on%20why%20leaked%20Solana%20private%20keys%20are%20permanently%20unsafe)
+
+## Built for AI agents too
+
+Coding agents and LLM tooling can read this repo directly: [AGENTS.md](./AGENTS.md), [llms.txt](./llms.txt), [llms-full.txt](./llms-full.txt). Point an agent at `https://github.com/nirholas/sol-sweeper-bots` and it has the context it needs.
+
+## More from the same author
+
+- [All repositories by nirholas](https://github.com/nirholas/nirholas#readme): the full catalog, grouped by topic
+- [three.ws](https://three.ws): the platform for 3D AI agents with Solana wallets, a skill marketplace and x402 payments
+- Questions or ideas: [open an issue](https://github.com/nirholas/sol-sweeper-bots/issues) or [start a discussion](https://github.com/nirholas/sol-sweeper-bots/discussions)
+
+## Contributors
+
+[![Contributors](https://contrib.rocks/image?repo=nirholas/sol-sweeper-bots)](https://github.com/nirholas/sol-sweeper-bots/graphs/contributors)
+
+<!-- /three.ws:growth -->
