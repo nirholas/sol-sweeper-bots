@@ -1,0 +1,22 @@
+{
+  "name": "sol-sweeper-bots",
+  "owner": {
+    "name": "nirholas"
+  },
+  "description": "Scan source trees and dependencies for committed Solana private keys, and check from public ledger data whether an address is already swept.",
+  "plugins": [
+    {
+      "name": "sol-keyscan",
+      "source": "./plugins/sol-keyscan",
+      "description": "Scan source trees and dependencies for committed Solana private keys, and check from public ledger data whether an address is already swept.",
+      "category": "development",
+      "tags": [
+        "solana",
+        "security",
+        "secret-scanning",
+        "private-key",
+        "sweeper-bots"
+      ]
+    }
+  ]
+}
