@@ -1,0 +1,18 @@
+{
+  "name": "sol-keyscan",
+  "version": "0.1.0",
+  "description": "Scan source trees and dependencies for committed Solana private keys, and check from public ledger data whether an address is already swept.",
+  "author": {
+    "name": "nirholas"
+  },
+  "repository": "https://github.com/nirholas/sol-sweeper-bots",
+  "homepage": "https://github.com/nirholas/sol-sweeper-bots",
+  "license": "MIT",
+  "keywords": [
+    "solana",
+    "security",
+    "secret-scanning",
+    "private-key",
+    "sweeper-bots"
+  ]
+}
